@@ -6,7 +6,7 @@ Repositorio auxiliares CC7515 Computación en GPU, Departamento de Ciencias de l
 
 ## Cuerpo docente
 
-| Auxiliar | correo |
+| Auxiliar | Correo |
 | :-: |:-:|
 | Pablo Pizarro R. | pablo.pizarro@ing.uchile.cl |
 
