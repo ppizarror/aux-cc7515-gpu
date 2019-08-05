@@ -26,3 +26,6 @@ add_executable(EX-11-COMPLEX-V2 src/11_main.cpp src/11_complex_v2.cpp)
 add_executable(EX-12-COMPLEX-V3 src/12_main.cpp src/12_complex_v3.cpp)
 add_executable(EX-13-STACK src/13_main.cpp ${AUX1_STACK})
 add_executable(EX-14-TESTS src/14_tests.cpp)
+
+# Agregamos geometría
+add_executable(PUNTO geom/geom_main.cpp geom/punto.h)
