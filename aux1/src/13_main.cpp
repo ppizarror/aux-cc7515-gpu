@@ -18,7 +18,5 @@ int main() {
     std::cout << "c2 = " << c2 << std::endl;
 
     std::cout << "On end, size of stack = " << stack.size() << std::endl;
-
     return 0;
-  }
-
+}

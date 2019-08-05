@@ -1,11 +1,10 @@
 #include <cassert>
 #include "12_complex_v3.h"
 
-int main(void)
-{
+int main() {
     // Initialize
-    Complex s(1,1);
-    Complex d(0,1);
+    Complex s(1, 1);
+    Complex d(0, 1);
 
     // Experiment
     s = s + d;

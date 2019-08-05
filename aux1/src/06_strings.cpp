@@ -1,8 +1,7 @@
 #include <iostream>
 #include <string>
 
-int main (void)
-{
+int main() {
     std::string str1 = "Hello";
     std::string str2, str3;
     int len;
@@ -10,15 +9,15 @@ int main (void)
     std::cout << "Write a word: ";
     std::cin >> str2;
 
-    // Copy str1 into str3
+    // Copia str1 en str3
     str3 = str1;
     std::cout << "str3 : " << str3 << std::endl;
 
-    // Concatenates str1 and str2
+    // Concatena str1 y str2
     str3 = str1 + str2;
     std::cout << "str1 + str2 : " << str3 << std::endl;
 
-    // Total length of str3 after concatenation
+    // Largo total de str3 después de concatenar
     len = str3.size();
     std::cout << "str3.size() :  " << len << std::endl;
 

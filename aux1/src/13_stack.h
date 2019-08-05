@@ -5,10 +5,10 @@ class Stack
 {
 public:
     Stack();
-    T pop(void);
+    T pop();
     void push(T &elem);
-    T top(void) const;
-    int size(void) const;
+    T top() const;
+    int size() const;
 
 private:
     std::vector<T> m_stack;

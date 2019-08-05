@@ -1,7 +1,6 @@
 #include <iostream>
 
-int main (void)
-{
+int main() {
     // Variables
     int a = 5;
 
@@ -10,12 +9,12 @@ int main (void)
     std::cout << "a = " << a << std::endl;
     std::cout << "aRef = " << aRef << std::endl;
 
-    // Modify variable
+    // Modifica variable
     a = 7;
     std::cout << "a = " << a << std::endl;
     std::cout << "aRef = " << aRef << std::endl;
 
-    // Modify reference
+    // Modifica referencia
     aRef = 8;
     std::cout << "a = " << a << std::endl;
     std::cout << "aRef = " << aRef << std::endl;

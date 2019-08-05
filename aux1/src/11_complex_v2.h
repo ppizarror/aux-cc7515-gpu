@@ -1,11 +1,15 @@
-class Complex
-{
+class Complex {
 public:
+    explicit Complex(float real);
+
     Complex(float real, float imag);
-    Complex(float real);
+
     Complex();
+
     ~Complex();
+
     float getImaginaryPart() const;
+
     float getRealPart() const;
 
 private:
