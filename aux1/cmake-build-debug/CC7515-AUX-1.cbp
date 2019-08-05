@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CC7515-AUX-1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-3-IF-ELSE">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-3-IF-ELSE.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-3-IF-ELSE"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-3-IF-ELSE/fast">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-3-IF-ELSE.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-3-IF-ELSE/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-1-HELLO-WORLD">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-1-HELLO-WORLD.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-1-HELLO-WORLD"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-1-HELLO-WORLD/fast">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-1-HELLO-WORLD.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-1-HELLO-WORLD/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-9-COMPLEX-V1">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-9-COMPLEX-V1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-9-COMPLEX-V1"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-9-COMPLEX-V1/fast">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-9-COMPLEX-V1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-9-COMPLEX-V1/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-4-WHILE-FOR">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-4-WHILE-FOR.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-4-WHILE-FOR"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-4-WHILE-FOR/fast">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-4-WHILE-FOR.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-4-WHILE-FOR/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-12-COMPLEX-V3">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-12-COMPLEX-V3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-12-COMPLEX-V3"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-12-COMPLEX-V3/fast">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-12-COMPLEX-V3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-12-COMPLEX-V3/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-2-VARIABLES">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-2-VARIABLES.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-2-VARIABLES"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-2-VARIABLES/fast">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-2-VARIABLES.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-2-VARIABLES/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-5-FUNCTIONS">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-5-FUNCTIONS.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-5-FUNCTIONS"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-5-FUNCTIONS/fast">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-5-FUNCTIONS.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-5-FUNCTIONS/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-6-STRINGS">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-6-STRINGS.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-6-STRINGS"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-6-STRINGS/fast">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-6-STRINGS.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-6-STRINGS/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-7-POINTER">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-7-POINTER.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-7-POINTER"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-7-POINTER/fast">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-7-POINTER.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-7-POINTER/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-8-REFERENCE">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-8-REFERENCE.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-8-REFERENCE"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-8-REFERENCE/fast">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-8-REFERENCE.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-8-REFERENCE/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-10-COMPLEX-V1-SEP">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-10-COMPLEX-V1-SEP.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-10-COMPLEX-V1-SEP"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-10-COMPLEX-V1-SEP/fast">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-10-COMPLEX-V1-SEP.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-10-COMPLEX-V1-SEP/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-11-COMPLEX-V2">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-11-COMPLEX-V2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-11-COMPLEX-V2"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-11-COMPLEX-V2/fast">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-11-COMPLEX-V2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-11-COMPLEX-V2/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-13-STACK">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-13-STACK.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-13-STACK"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-13-STACK/fast">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-13-STACK.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-13-STACK/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-14-TESTS">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-14-TESTS.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-14-TESTS"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EX-14-TESTS/fast">
+				<Option output="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug/EX-14-TESTS.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 EX-14-TESTS/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Pablo\Google Drive\Trabajos\Computacion en GPU\aux-cc7515-gpu\aux1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/01_helloworld.cpp">
+			<Option target="EX-1-HELLO-WORLD"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/02_variables.cpp">
+			<Option target="EX-2-VARIABLES"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/03_if_else.cpp">
+			<Option target="EX-3-IF-ELSE"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/04_while_for.cpp">
+			<Option target="EX-4-WHILE-FOR"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/05_functions.cpp">
+			<Option target="EX-5-FUNCTIONS"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/06_strings.cpp">
+			<Option target="EX-6-STRINGS"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/07_pointer.cpp">
+			<Option target="EX-7-POINTER"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/08_reference.cpp">
+			<Option target="EX-8-REFERENCE"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/09_complex_v1.cpp">
+			<Option target="EX-9-COMPLEX-V1"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/10_complex_v1_sep.cpp">
+			<Option target="EX-10-COMPLEX-V1-SEP"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/10_complex_v1_sep.h">
+			<Option target="EX-10-COMPLEX-V1-SEP"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/10_main.cpp">
+			<Option target="EX-10-COMPLEX-V1-SEP"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/11_complex_v2.cpp">
+			<Option target="EX-11-COMPLEX-V2"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/11_complex_v2.h">
+			<Option target="EX-11-COMPLEX-V2"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/11_main.cpp">
+			<Option target="EX-11-COMPLEX-V2"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/12_complex_v3.cpp">
+			<Option target="EX-12-COMPLEX-V3"/>
+			<Option target="EX-13-STACK"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/12_complex_v3.h">
+			<Option target="EX-12-COMPLEX-V3"/>
+			<Option target="EX-13-STACK"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/12_main.cpp">
+			<Option target="EX-12-COMPLEX-V3"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/13_main.cpp">
+			<Option target="EX-13-STACK"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/13_stack.h">
+			<Option target="EX-13-STACK"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/src/14_tests.cpp">
+			<Option target="EX-14-TESTS"/>
+		</Unit>
+		<Unit filename="C:/Users/Pablo/Google Drive/Trabajos/Computacion en GPU/aux-cc7515-gpu/aux1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
