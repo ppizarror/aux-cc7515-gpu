@@ -2,13 +2,13 @@
 #include "12_complex_v3.h"
 
 int main() {
-    // Initialize
+    // Inicializa
     Complex s(1, 1);
     Complex d(0, 1);
 
-    // Experiment
+    // Experimento
     s = s + d;
 
-    // Assert results
+    // Assert
     assert(s.getRealPart() == 1 and s.getImaginaryPart() == 2);
 }
