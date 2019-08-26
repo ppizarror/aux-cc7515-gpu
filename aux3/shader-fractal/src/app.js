@@ -24,7 +24,6 @@ $(function () {
     // console.log(cfg_lang);
     lang = lang_db[cfg_lang]; // Se carga el idioma
 
-
     /**
      * ------------------------------------------------------------------------
      * Carga las cookies
