@@ -1312,7 +1312,7 @@ function ShaderViewer() {
         vertices[7] = 1.0;
         vertices[8] = self._shaderObject.plotz;
 
-        // Second triangle.
+        // Segundo triángulo
         vertices[9] = -1.0;
         vertices[10] = -1.0;
         vertices[11] = self._shaderObject.plotz;
