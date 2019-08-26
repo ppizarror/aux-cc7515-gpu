@@ -11,7 +11,6 @@
  * Contiene la información de los shaders disponibles
  * @global
  * @const
- * @since 0.1.6
  */
 let shader_lib = {
     "julia-z2": {
@@ -139,7 +138,6 @@ let shader_lib = {
  * @param {string} vertex - Archivo vertex shader
  * @param {string} fragment - Archivo fragment shader
  * @param {function=} callback - Función a llamar para pasar [vertex,shader]
- * @since 0.1.3
  */
 function load_shader(vertex, fragment, callback) {
 

@@ -12,7 +12,6 @@
  *
  * @class
  * @constructor
- * @since 0.1.0
  */
 function ShaderViewer() {
 
@@ -25,14 +24,12 @@ function ShaderViewer() {
     /**
      * ID del canvas
      * @type {string}
-     * @private
      */
     this.id = generateID();
 
     /**
      * DIV que contiene el canvas
      * @type {JQuery | jQuery | HTMLElement | null}
-     * @protected
      */
     this._canvasParent = null;
 
@@ -45,20 +42,17 @@ function ShaderViewer() {
     /**
      * Selector del shader
      * @type {null | JQuery<HTMLElement> | HTMLElement}
-     * @private
      */
     this._shaderSelector = null;
 
     /**
      * Puntero al menú
      * @type {JQuery | jQuery | HTMLElement | null}
-     * @protected
      */
     this._menuContainer = null;
 
     /**
      * Contiene los identificadores de los valores del campo complejo
-     * @private
      */
     this._infoID = {
         ln: null,               // Largo de la ventana
@@ -71,7 +65,6 @@ function ShaderViewer() {
 
     /**
      * Contiene los input de los valores de julia (constantes)
-     * @private
      */
     this._juliaInputs = {
         re: null,
@@ -80,7 +73,6 @@ function ShaderViewer() {
 
     /**
      * Datos del visualizador
-     * @private
      */
     this._shaderObject = {
         color: {                // Colores
@@ -119,13 +111,11 @@ function ShaderViewer() {
     /**
      * ID de la GUI
      * @type {object | string}
-     * @protected
      */
     this._guiID = 'viewer-gui';
 
     /**
      * Define el bound potencial del zoom
-     * @private
      */
     this._bound = {
         hide: false,            // Indica que el borde está oculto
@@ -153,7 +143,6 @@ function ShaderViewer() {
     /**
      * Indica si se mantiene un botón presionado
      * @type {boolean}
-     * @private
      */
     this._hasKeyPressed = false;
 
@@ -161,21 +150,18 @@ function ShaderViewer() {
     /**
      * Indica si el mouse está sobre el canvas
      * @type {boolean}
-     * @private
      */
     this._hasMouseOver = false;
 
     /**
      * Indica si el mouse se mantiene presionado
      * @type {boolean}
-     * @private
      */
     this._hasMousePressed = false;
 
     /**
      * El mouse se presiona y mueve
      * @type {boolean}
-     * @private
      */
     this._mouseMoveDrag = false;
 
@@ -183,28 +169,17 @@ function ShaderViewer() {
     /**
      * Si el mouse no intersecta el plano no se muestra la región del zoom
      * @type {boolean}
-     * @private
      */
     this._hasMouseIntersectPlane = false;
 
     /**
      * ID del evento de mousemove en la ventana
      * @type {string}
-     * @private
      */
     this._windowMouseMoveEvent = 'mousemove.rectzoom';
 
-    // noinspection JSUnusedGlobalSymbols
-    /**
-     * Indica que el mouse está presionado
-     * @type {boolean}
-     * @private
-     */
-    this._mouseKeepPressed = false;
-
     /**
      * Contiene identificadores de los eventos
-     * @private
      */
     this._eventID = {
         click: 'click.canvas',
@@ -229,67 +204,11 @@ function ShaderViewer() {
     /**
      * Indica que la animación está activa
      * @type {boolean}
-     * @private
      */
     this._animateThread = false;
 
     /**
-     * Three.js helpers
-     * @protected
-     */
-    this.threejs_helpers = {
-
-        /**
-         * Helpers, estado
-         */
-        axis: false,                     // Muestra los ejes en el plano
-        cameratarget: false,             // Muestra el objetivo de la cámara
-        fpsmeter: false,                 // Indicador de FPS
-        grid: true,                      // Muestra grilla en plano
-        gui: false,                      // Muestra una gui por defecto (modificable)
-        planes: false,                   // Dibuja los planos
-        worldlimits: false,              // Límites del mundo
-
-        /**
-         * Parámetros de los helpers
-         */
-        axissize: 0.40,                 // Tamaño de los ejes en comparación al tamaño del mundo (menor)
-        cameratargetcolor: 0X0000FF,    // Color del target
-        cameratargetsize: 0.02,         // Tamaño del punto del objetivo de la cámara (% tamaño mundo)
-        griddist: 0.03,                 // % Cubierto por líneas
-        guistartclosed: true,           // La gui si se autoinicia aparece cerrada
-        guicloseafterpopup: false,      // La gui se cierra al abrir un popup
-        planecolorx: 0X0000FF,          // Color plano x
-        planecolory: 0XFF0000,          // Color plano y
-        planecolorz: 0X00FF00,          // Color plano z
-        planeopacity: 0.5,              // Opacidad del plano
-        worldlimitscolor: 0X444444,     // Colores límite del mundo
-
-    };
-
-    /**
-     * Contiene funciones de actualización de los helpers, se extiende en @drawHelpers
-     * @type {Array}
-     * @private
-     */
-    this._helpersUpdate = [];
-
-    /**
-     * Instancias de cada helper, son únicos, se eliminan o añaden en @drawHelpers
-     * @private
-     */
-    this._helperInstances = {
-        axis: null,
-        cameratarget: null,
-        fpsmeter: null,
-        grid: null,
-        planes: null,
-        worldlimits: null,
-    };
-
-    /**
      * Nombres globales, usados para identificar determinados elementos preestablecidos
-     * @protected
      */
     this._globals = {
         contour: '__CONTOUR',
@@ -300,7 +219,6 @@ function ShaderViewer() {
 
     /**
      * Propiedades de los objetos del mundo
-     * @protected
      */
     this.objects_props = {
 
@@ -366,13 +284,11 @@ function ShaderViewer() {
     /**
      * Lista con meshes colisionables
      * @type {Array}
-     * @private
      */
     this._collaidableMeshes = [];
 
     /**
      * Coordenadas del mouse dentro de la ventana, usado principalmente por el tooltip
-     * @private
      */
     this._mouse = {
         x: 0,           // Posición dentro del canvas en x
@@ -390,7 +306,6 @@ function ShaderViewer() {
      * Reajusta el canvas al cambiar el tamaño.
      *
      * @param {boolean} type - Indica tipo de carga, si es true se añade evento, si es false se borra
-     * @since 0.1.0
      */
     this._threeResize = function (type) {
 
@@ -451,8 +366,6 @@ function ShaderViewer() {
 
     /**
      * Inicia Three.js.
-     *
-     * @since 0.1.0
      */
     this._initThree = function () {
 
@@ -583,7 +496,6 @@ function ShaderViewer() {
         );
         this._three_camera.zoom = this.objects_props.camera.zoom;
 
-        // noinspection JSUnusedGlobalSymbols
         /**
          * --------------------------------------------------------------------
          * Crea la luz, se añade a la cámara
@@ -648,22 +560,10 @@ function ShaderViewer() {
          */
         this._raycaster = new THREE.Raycaster();
 
-        /**
-         * --------------------------------------------------------------------
-         * Inicia la GUI
-         * --------------------------------------------------------------------
-         */
-        if (this.threejs_helpers.gui) {
-            this.threejs_helpers.gui = false;
-            this._toggleGUI();
-        }
-
     };
 
     /**
      * Define la posición inicial de la cámara.
-     *
-     * @since 0.1.0
      */
     this._setInitialCameraPosition = function () {
 
@@ -697,8 +597,6 @@ function ShaderViewer() {
 
     /**
      * Setea el target de la cámara.
-     *
-     * @since 0.1.0
      */
     this._setCameraTarget = function () {
         // noinspection JSSuspiciousNameCombination
@@ -714,7 +612,6 @@ function ShaderViewer() {
      * @param {number} min - Valor mínimo de la posición
      * @param {number} max - Valor máximo de la posición
      * @returns {boolean} - Indica si la cámara se puede mover
-     * @since 0.1.0
      */
     this._checkCameraTargetLimits = function (axis, min, max) {
         let $pos = self.objects_props.camera.target[axis];
@@ -731,7 +628,6 @@ function ShaderViewer() {
      * @param {number} a - Número
      * @param {number} b - Número
      * @returns {number}
-     * @since 0.1.0
      */
     this._dist2 = function (a, b) {
         return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
@@ -745,7 +641,6 @@ function ShaderViewer() {
      * @param {number} min - Valor mínimo de la posición
      * @param {number} max - Valor máximo de la posición
      * @returns {boolean} - Indica si la cámara se puede mover
-     * @since 0.1.0
      */
     this._checkCameraTargetLimits = function (axis, min, max) {
         let $pos = self.objects_props.camera.target[axis];
@@ -762,7 +657,6 @@ function ShaderViewer() {
      * @param {string} axis - Eje a comprobar
      * @param {number} val - valor A sumar
      * @returns {boolean} - Indica si no se colisiona (true) o no (false)
-     * @since 0.1.0
      */
     this._checkCameraTargetCollision = function (axis, val) {
 
@@ -781,7 +675,6 @@ function ShaderViewer() {
      * @param {number} val - Incremento de la dirección
      * @param {boolean=} flipSignPos - Cambia el sentido del incremento según la posición de la cámara
      * @param {boolean=} setTarget - Establece el target de la cámara
-     * @since 0.1.0
      */
     this._updateCameraTarget = function (dir, val, flipSignPos, setTarget) {
 
@@ -830,8 +723,6 @@ function ShaderViewer() {
 
     /**
      * Renderiza el contenido de Three.js.
-     *
-     * @since 0.1.0
      */
     this._render = function () {
 
@@ -840,27 +731,10 @@ function ShaderViewer() {
          */
         self._renderer.render(self._scene, self._three_camera);
 
-        /**
-         * Actualiza los helpers
-         */
-        for (let i = 0; i < self._helpersUpdate.length; i += 1) {
-            self._helpersUpdate[i].update();
-        }
-        if (notNullUndf(self._gui)) {
-            self._guiCameraParams.posx = roundNumber(self._three_camera.position.z, 3);
-            self._guiCameraParams.posy = roundNumber(self._three_camera.position.x, 3);
-            self._guiCameraParams.posz = roundNumber(self._three_camera.position.y, 3);
-            self._guiCameraParams.rotationx = roundNumber(self._three_camera.rotation.z, 3);
-            self._guiCameraParams.rotationy = roundNumber(self._three_camera.rotation.x, 3);
-            self._guiCameraParams.rotationz = roundNumber(self._three_camera.rotation.y, 3);
-        }
-
     };
 
     /**
      * Actualiza controles y renderiza.
-     *
-     * @since 0.1.0
      */
     this._animateFrame = function () {
 
@@ -878,8 +752,6 @@ function ShaderViewer() {
 
     /**
      * Thread de animación, dibuja mediante {@link requestAnimationFrame}.
-     *
-     * @since 0.1.0
      */
     this._animationThread = function () {
         if (!self._animateThread) return;
@@ -889,8 +761,6 @@ function ShaderViewer() {
 
     /**
      * Inicia el thread de actualizaciones.
-     *
-     * @since 0.1.0
      */
     this.initAnimate = function () {
         self._animateThread = true;
@@ -899,15 +769,8 @@ function ShaderViewer() {
 
     /**
      * Añade objetos a la escena.
-     *
-     * @since 0.1.0
      */
     this._initWorldObjects = function () {
-
-        /**
-         * Añade los helpers
-         */
-        this._drawHelpers();
 
         /**
          * Establece el target de la cámara si es que se cambió en initObjectModel
@@ -923,8 +786,6 @@ function ShaderViewer() {
 
     /**
      * Guarda algunas variables iniciales antes de renderizar, utiliza valores desde initObjectModel.
-     *
-     * @since 0.1.0
      */
     this._saveInitialStatus = function () {
         self.objects_props.camera.initialTarget.x = self.objects_props.camera.target.x;
@@ -936,7 +797,6 @@ function ShaderViewer() {
      * Mueve la cámara en dirección paralela al rayo entre la posición de la cámara y el target.
      *
      * @param {number} direction - Dirección de avance (1, -1)
-     * @since 0.1.0
      */
     this._moveParallel = function (direction) {
 
@@ -965,7 +825,6 @@ function ShaderViewer() {
      * Mueve la cámara en dirección ortogonal al rayo entre la posición de la cámara y el target.
      *
      * @param {number} direction - Dirección de avance (1, -1)
-     * @since 0.1.0
      */
     this._moveOrtho = function (direction) {
 
@@ -995,7 +854,6 @@ function ShaderViewer() {
      * Mueve la cámara de manera vertical en el eje +-Z.
      *
      * @param {number} direction - Dirección de avance
-     * @since 0.1.0
      */
     this._moveVertical = function (direction) {
 
@@ -1010,7 +868,6 @@ function ShaderViewer() {
      * Rota el objetivo de la cámara en torno a la posición de la cámara.
      *
      * @param {number} direction - Dirección de avance
-     * @since 0.1.0
      */
     this._rotateTarget = function (direction) {
 
@@ -1052,8 +909,6 @@ function ShaderViewer() {
 
     /**
      * Mueve la cámara al frente.
-     *
-     * @since 0.1.0
      */
     this._moveForward = function () {
         this._moveParallel(-1);
@@ -1061,8 +916,6 @@ function ShaderViewer() {
 
     /**
      * Mueve la cámara hacia atrás.
-     *
-     * @since 0.1.0
      */
     this._moveBackward = function () {
         this._moveParallel(1);
@@ -1070,8 +923,6 @@ function ShaderViewer() {
 
     /**
      * Mueve la cámara a la izquierda.
-     *
-     * @since 0.1.0
      */
     this._moveLeft = function () {
         this._moveOrtho(-1);
@@ -1079,8 +930,6 @@ function ShaderViewer() {
 
     /**
      * Mueve la cámara a la derecha.
-     *
-     * @since 0.1.0
      */
     this._moveRight = function () {
         this._moveOrtho(1);
@@ -1088,8 +937,6 @@ function ShaderViewer() {
 
     /**
      * Mueve la cámara en la coordenada +Z.
-     *
-     * @since 0.1.0
      */
     this._moveUp = function () {
         this._moveVertical(1);
@@ -1097,8 +944,6 @@ function ShaderViewer() {
 
     /**
      * Mueve la cámara en la coordenada -Z.
-     *
-     * @since 0.1.0
      */
     this._moveDown = function () {
         this._moveVertical(-1);
@@ -1106,8 +951,6 @@ function ShaderViewer() {
 
     /**
      * Rota la cámara hacia la izquierda.
-     *
-     * @since 0.1.0
      */
     this._rotateLeft = function () {
         this._rotateTarget(1);
@@ -1115,8 +958,6 @@ function ShaderViewer() {
 
     /**
      * Rota la cámara hacia la derecha.
-     *
-     * @since 0.1.0
      */
     this._rotateRight = function () {
         this._rotateTarget(-1);
@@ -1124,8 +965,6 @@ function ShaderViewer() {
 
     /**
      * Forza el foco en la aplicación.
-     *
-     * @since 0.1.0
      */
     this.focus = function () {
         self._canvasParent.trigger('focus'); // Atrapa focus
@@ -1143,8 +982,6 @@ function ShaderViewer() {
 
     /**
      * Inicia los eventos, se puede reemplazar por otra función.
-     *
-     * @since 0.1.0
      */
     this._initEvents = function () {
 
@@ -1297,509 +1134,12 @@ function ShaderViewer() {
 
     };
 
-    // noinspection JSUnusedGlobalSymbols
-    /**
-     * Detiene el thread de actualización.
-     *
-     * @since 0.1.0
-     */
-    this.stopAnimate = function () {
-        self._animateThread = false;
-    };
-
-    // noinspection JSUnusedGlobalSymbols
-    /**
-     * Resetea la cámara.
-     *
-     * @since 0.1.0
-     */
-    this._resetCamera = function () {
-        self._setInitialCameraPosition();
-        self._animateFrame();
-    };
-
-    /**
-     * Activa/Desactiva un helper.
-     *
-     * @since 0.1.0
-     */
-    this._toggleHelper = function () {
-        self._drawHelpers();
-        self._animateFrame();
-        self.focus();
-    };
-
-    // noinspection JSUnusedGlobalSymbols
-    /**
-     * Oculta/Muestra los ejes.
-     *
-     * @since 0.1.0
-     */
-    this._toggleAxis = function () {
-        self.threejs_helpers.axis = !self.threejs_helpers.axis;
-        self._toggleHelper();
-    };
-
-    // noinspection JSUnusedGlobalSymbols
-    /**
-     * Oculta/Muestra la grilla.
-     *
-     * @since 0.1.0
-     */
-    this._toggleGrid = function () {
-        self.threejs_helpers.grid = !self.threejs_helpers.grid;
-        self._toggleHelper();
-    };
-
-    // noinspection JSUnusedGlobalSymbols
-    /**
-     * Oculta/Muestra los límites del mundo.
-     *
-     * @since 0.1.0
-     */
-    this._toggleWorldLimits = function () {
-        self.threejs_helpers.worldlimits = !self.threejs_helpers.worldlimits;
-        self._toggleHelper();
-    };
-
-    // noinspection JSUnusedGlobalSymbols
-    /**
-     * Oculta/Muestra el objetivo de la cámara.
-     *
-     * @since 0.1.0
-     */
-    this._toggleCameraTarget = function () {
-        self.threejs_helpers.cameratarget = !self.threejs_helpers.cameratarget;
-        self._toggleHelper();
-    };
-
-    // noinspection JSUnusedGlobalSymbols
-    /**
-     * Oculta/Muestra los planos.
-     *
-     * @since 0.1.0
-     */
-    this._togglePlanes = function () {
-        self.threejs_helpers.planes = !self.threejs_helpers.planes;
-        self._toggleHelper();
-    };
-
-    /**
-     * Oculta/Muestra la GUI.
-     *
-     * @since 0.1.0
-     */
-    this._toggleGUI = function () {
-        self.threejs_helpers.gui = !self.threejs_helpers.gui;
-        if (self.threejs_helpers.gui) {
-            self._buildGUI();
-        } else {
-            self._destroyGUI();
-        }
-    };
-
-    /**
-     * Construye una interfaz gráfica para el render.
-     *
-     * @since 0.1.0
-     */
-    this._buildGUI = function () {
-
-        /**
-         * Crea una GUI
-         */
-        this._gui = new dat.GUI({autoPlace: false});
-
-        /**
-         * --------------------------------------------------------------------
-         * Carpeta cámara
-         * --------------------------------------------------------------------
-         */
-        let camerafolder = this._gui.addFolder(lang.viewer_3d_gui_camera);
-        this._guiCameraParams = {
-            fov: self._three_camera.fov,
-            far: self._three_camera.far,
-            zoom: self._three_camera.zoom,
-            maxdistance: self._controls.maxDistance,
-            maxpolarangle: self._controls.maxPolarAngle,
-            posx: self._three_camera.position.z,
-            posy: self._three_camera.position.x,
-            posz: self._three_camera.position.y,
-            rotationx: Number(self._three_camera.rotation.z) + 0.01,
-            rotationy: Number(self._three_camera.rotation.x) + 0.01,
-            rotationz: Number(self._three_camera.rotation.y) + 0.01
-        };
-        camerafolder.add(this._guiCameraParams, 'fov', 1, 179).onChange(function (val) {
-            self._three_camera.fov = val;
-            self._three_camera.updateProjectionMatrix();
-            self._animateFrame();
-        });
-        camerafolder.add(this._guiCameraParams, 'far', 100, 10000).onChange(function (val) {
-            self._three_camera.far = val;
-            self._three_camera.updateProjectionMatrix();
-            self._animateFrame();
-        });
-        camerafolder.add(this._guiCameraParams, 'zoom', 0.1, 10).onChange(function (val) {
-            self._three_camera.zoom = val;
-            self._three_camera.updateProjectionMatrix();
-            self._animateFrame();
-        });
-        camerafolder.add(this._guiCameraParams, 'maxdistance', 100, 5 * self._worldsize.diagl).onChange(function (val) {
-            self._controls.maxDistance = val;
-            self._animateFrame();
-        });
-        camerafolder.add(this._guiCameraParams, 'maxpolarangle', 0, Math.PI).onChange(function (val) {
-            self._controls.maxPolarAngle = val;
-            self._animateFrame();
-        });
-        camerafolder.add(this._guiCameraParams, 'posx', 1, 2 * self._worldsize.diagl).onChange(function (val) {
-            self._three_camera.position.z = val;
-            self._animateFrame();
-        }).listen();
-        camerafolder.add(this._guiCameraParams, 'posy', 1, 2 * self._worldsize.diagl).onChange(function (val) {
-            self._three_camera.position.x = val;
-            self._animateFrame();
-        }).listen();
-        camerafolder.add(this._guiCameraParams, 'posz', 1, 2 * self._worldsize.diagl).onChange(function (val) {
-            self._three_camera.position.y = val;
-            self._animateFrame();
-        }).listen();
-        camerafolder.add(this._guiCameraParams, 'rotationx', -Math.PI, Math.PI).onChange(function (val) {
-            self._three_camera.rotation.z = val;
-            self._animateFrame();
-        }).listen();
-        camerafolder.add(this._guiCameraParams, 'rotationy', -Math.PI, Math.PI).onChange(function (val) {
-            self._three_camera.rotation.x = val;
-            self._animateFrame();
-        }).listen();
-        camerafolder.add(this._guiCameraParams, 'rotationz', -Math.PI / 2, Math.PI / 2).onChange(function (val) {
-            self._three_camera.rotation.y = val;
-            self._animateFrame();
-        }).listen();
-
-        /**
-         * Añade la GUI al div
-         */
-        $('#' + this._guiID).append(this._gui.domElement);
-
-        /**
-         * Inicia la GUI cerrada
-         */
-        if (this.threejs_helpers.guistartclosed) {
-            this._gui.close();
-        }
-
-    };
-
-    /**
-     * Destruye la GUI.
-     *
-     * @since 0.1.0
-     */
-    this._destroyGUI = function () {
-        if (notNullUndf(self._gui)) {
-            self._gui.destroy();
-            self._gui = null;
-            $('#' + self._guiID).empty();
-        }
-    };
-
-    // noinspection JSUnusedGlobalSymbols
-    /**
-     * Añade visualizador de FPS.
-     *
-     * @since 0.1.0
-     */
-    this._toggleFPSMeter = function () {
-
-        /**
-         * Si no se ha activado retorna
-         */
-        if (!self.threejs_helpers.fpsmeter) return;
-
-        /**
-         * Si no se ha creado el FPS
-         */
-        if (isNullUndf(self._helperInstances.fpsmeter)) {
-            let stats = new Stats();
-            self._canvasParent.append(stats.dom);
-            requestAnimationFrame(function loop() {
-                stats.update();
-                requestAnimationFrame(loop);
-            });
-            self._helperInstances.fpsmeter = stats;
-        }
-
-        /**
-         * Si se creó se elimina del DOM (toggle)
-         */
-        else {
-            self._helperInstances.fpsmeter.dom.remove();
-            self._helperInstances.fpsmeter = null;
-        }
-
-    };
-
-    /**
-     * Dibuja los helpers de Three.js según configuración.
-     *
-     * @since 0.1.0
-     */
-    this._drawHelpers = function () {
-
-        /**
-         * Variable local helper
-         */
-        let helper;
-
-        /**
-         * --------------------------------------------------------------------
-         * Dibuja ejes
-         * --------------------------------------------------------------------
-         */
-        if (this.threejs_helpers.axis) {
-            if (isNullUndf(this._helperInstances.axis)) {
-                let $helpersize = Math.min(self._worldsize.x, self._worldsize.y, self._worldsize.z) * self.threejs_helpers.axissize;
-                helper = new THREE.AxesHelper($helpersize);
-                self._addMeshToScene(helper, this._globals.helper, false);
-                // noinspection JSValidateTypes
-                this._helperInstances.axis = helper; // Añade la instancia
-            }
-        } else { // Se elimina el helper si es que se instanció
-            if (notNullUndf(this._helperInstances.axis)) {
-                self._scene.remove(this._helperInstances.axis);
-            }
-            this._helperInstances.axis = null;
-        }
-
-
-        /**
-         * --------------------------------------------------------------------
-         * Dibuja planos x, y, z
-         * --------------------------------------------------------------------
-         */
-        if (this.threejs_helpers.planes) {
-            if (isNullUndf(this._helperInstances.planes)) {
-                let $planes = [];
-
-                // Colores de los planos
-                let materialx = new THREE.MeshBasicMaterial({
-                    color: self.threejs_helpers.planecolorx,
-                    opacity: self.threejs_helpers.planeopacity,
-                });
-                let materialy = new THREE.MeshBasicMaterial({
-                    color: self.threejs_helpers.planecolory,
-                    opacity: self.threejs_helpers.planeopacity,
-                });
-                let materialz = new THREE.MeshBasicMaterial({
-                    color: self.threejs_helpers.planecolorz,
-                    opacity: self.threejs_helpers.planeopacity,
-                });
-                materialx.wireframe = true;
-                materialx.aoMapIntensity = self.threejs_helpers.planeopacity;
-                materialy.wireframe = true;
-                materialy.aoMapIntensity = self.threejs_helpers.planeopacity;
-                materialz.wireframe = true;
-                materialz.aoMapIntensity = self.threejs_helpers.planeopacity;
-
-                // Geometrías de los plannos
-                let geometry, plane;
-
-                // Plano x
-                geometry = new THREE.Geometry();
-                geometry.vertices.push(
-                    this._newThreePoint(this._worldsize.x, 0, 0),
-                    this._newThreePoint(-this._worldsize.x, 0, 0),
-                    this._newThreePoint(-this._worldsize.x, 0, this._worldsize.z),
-                    this._newThreePoint(this._worldsize.x, 0, this._worldsize.z)
-                );
-                geometry.faces.push(new THREE.Face3(0, 1, 2));
-                geometry.faces.push(new THREE.Face3(0, 2, 3));
-                plane = new THREE.Mesh(geometry, materialx);
-                plane.position.y = 0;
-                self._addMeshToScene(plane, this._globals.helper, false);
-                $planes.push(plane);
-
-                // Plano y
-                geometry = new THREE.Geometry();
-                geometry.vertices.push(
-                    this._newThreePoint(0, -this._worldsize.y, 0),
-                    this._newThreePoint(0, this._worldsize.y, 0),
-                    this._newThreePoint(0, this._worldsize.y, this._worldsize.z),
-                    this._newThreePoint(0, -this._worldsize.y, this._worldsize.z)
-                );
-                geometry.faces.push(new THREE.Face3(0, 1, 2));
-                geometry.faces.push(new THREE.Face3(0, 2, 3));
-                plane = new THREE.Mesh(geometry, materialy);
-                plane.position.y = 0;
-                self._addMeshToScene(plane, this._globals.helper, false);
-                $planes.push(plane);
-
-                // Plano z
-                geometry = new THREE.Geometry();
-                geometry.vertices.push(
-                    this._newThreePoint(this._worldsize.x, this._worldsize.y, 0),
-                    this._newThreePoint(-this._worldsize.x, this._worldsize.y, 0),
-                    this._newThreePoint(-this._worldsize.x, -this._worldsize.y, 0),
-                    this._newThreePoint(this._worldsize.x, -this._worldsize.y, 0)
-                );
-                geometry.faces.push(new THREE.Face3(0, 1, 2));
-                geometry.faces.push(new THREE.Face3(0, 2, 3));
-                plane = new THREE.Mesh(geometry, materialz);
-                plane.position.y = 0;
-                self._addMeshToScene(plane, this._globals.helper, false);
-                $planes.push(plane);
-
-                // noinspection JSValidateTypes
-                this._helperInstances.planes = $planes; // Añade instancia
-            }
-        } else { // Se elimina el helper si es que se instanció
-            if (notNullUndf(this._helperInstances.planes)) {
-                let $planes = this._helperInstances.planes;
-                for (let i = 0; i < $planes.length; i += 1) {
-                    this._scene.remove($planes[i]);
-                }
-            }
-            this._helperInstances.planes = null;
-        }
-
-        /**
-         * --------------------------------------------------------------------
-         * Dibuja grilla en el plano
-         * --------------------------------------------------------------------
-         */
-        if (this.threejs_helpers.grid) {
-            if (isNullUndf(this._helperInstances.grid)) {
-                let $mapsize = 2 * Math.max(this._worldsize.x, this._worldsize.y);
-                let $griddist = Math.floor(2 / this.threejs_helpers.griddist);
-                helper = new THREE.GridHelper($mapsize, $griddist);
-                helper.position.y = 0;
-                helper.material.opacity = 0.1;
-                helper.material.transparent = true;
-                self._addMeshToScene(helper, this._globals.helper, false);
-                // noinspection JSValidateTypes
-                this._helperInstances.grid = helper; // Añade la instancia
-            }
-        } else { // Se elimina el helper si es que se instanció
-            if (notNullUndf(this._helperInstances.grid)) {
-                this._scene.remove(this._helperInstances.grid);
-            }
-            this._helperInstances.grid = null;
-        }
-
-        /**
-         * --------------------------------------------------------------------
-         * Dibuja límites del mapa
-         * --------------------------------------------------------------------
-         */
-        if (this.threejs_helpers.worldlimits) {
-            if (isNullUndf(this._helperInstances.worldlimits)) {
-                let material = new THREE.MeshBasicMaterial({
-                    color: self.threejs_helpers.worldlimitscolor,
-                    opacity: self.threejs_helpers.planeopacity
-                });
-                material.wireframe = true;
-                material.aoMapIntensity = 0.5;
-                let geometry = new THREE.Geometry();
-                geometry.vertices.push(
-                    // Plano +x
-                    this._newThreePoint(this._worldsize.x, -this._worldsize.y, 0),
-                    this._newThreePoint(this._worldsize.x, this._worldsize.y, 0),
-                    this._newThreePoint(this._worldsize.x, this._worldsize.y, this._worldsize.z),
-                    this._newThreePoint(this._worldsize.x, -this._worldsize.y, this._worldsize.z),
-
-                    // Plano +y
-                    this._newThreePoint(this._worldsize.x, this._worldsize.y, 0),
-                    this._newThreePoint(-this._worldsize.x, this._worldsize.y, 0),
-                    this._newThreePoint(-this._worldsize.x, this._worldsize.y, this._worldsize.z),
-                    this._newThreePoint(this._worldsize.x, this._worldsize.y, this._worldsize.z),
-
-                    // Plano -x
-                    this._newThreePoint(-this._worldsize.x, -this._worldsize.y, 0),
-                    this._newThreePoint(-this._worldsize.x, this._worldsize.y, 0),
-                    this._newThreePoint(-this._worldsize.x, this._worldsize.y, this._worldsize.z),
-                    this._newThreePoint(-this._worldsize.x, -this._worldsize.y, this._worldsize.z),
-
-                    // Plano -y
-                    this._newThreePoint(this._worldsize.x, -this._worldsize.y, 0),
-                    this._newThreePoint(-this._worldsize.x, -this._worldsize.y, 0),
-                    this._newThreePoint(-this._worldsize.x, -this._worldsize.y, this._worldsize.z),
-                    this._newThreePoint(this._worldsize.x, -this._worldsize.y, this._worldsize.z),
-
-                    // Plano z
-                    this._newThreePoint(this._worldsize.x, -this._worldsize.y, this._worldsize.z),
-                    this._newThreePoint(this._worldsize.x, this._worldsize.y, this._worldsize.z),
-                    this._newThreePoint(-this._worldsize.x, this._worldsize.y, this._worldsize.z),
-                    this._newThreePoint(-this._worldsize.x, -this._worldsize.y, this._worldsize.z)
-                );
-                for (let j = 0; j <= 4; j += 1) {
-                    geometry.faces.push(new THREE.Face3(4 * j, 4 * j + 1, 4 * j + 2));
-                    geometry.faces.push(new THREE.Face3(4 * j, 4 * j + 2, 4 * j + 3));
-                }
-                let cube = new THREE.Mesh(geometry, material);
-                cube.position.y = 0;
-                self._addMeshToScene(cube, this._globals.helper, false);
-                // noinspection JSValidateTypes
-                this._helperInstances.worldlimits = cube; // Añade la instancia
-            }
-        } else { // Se elimina el helper si es que se instanció
-            if (notNullUndf(this._helperInstances.worldlimits)) {
-                this._scene.remove(this._helperInstances.worldlimits);
-            }
-            this._helperInstances.worldlimits = null;
-        }
-
-        /**
-         * --------------------------------------------------------------------
-         * Dibuja el objetivo de la cámara
-         * --------------------------------------------------------------------
-         */
-        if (this.threejs_helpers.cameratarget) {
-            if (isNullUndf(this._helperInstances.cameratarget)) {
-                let $targetsize = Math.min(self._worldsize.x, self._worldsize.y, self._worldsize.z) * self.threejs_helpers.cameratargetsize / 2;
-                let sphereGeometry = new THREE.SphereGeometry($targetsize, 16, 8);
-                let wireframeMaterial = new THREE.MeshBasicMaterial(
-                    {
-                        color: self.threejs_helpers.cameratargetcolor,
-                        transparent: true,
-                        wireframe: true,
-                    });
-                let mesh = new THREE.Mesh(sphereGeometry, wireframeMaterial);
-                let $update = function () {
-                    // noinspection JSSuspiciousNameCombination
-                    mesh.position.x = self.objects_props.camera.target.y;
-                    mesh.position.y = self.objects_props.camera.target.z;
-                    mesh.position.z = self.objects_props.camera.target.x;
-                };
-                $update();
-                self._addMeshToScene(mesh, this._globals.helper, false);
-                this._helpersUpdate.push({
-                    update: $update,
-                });
-
-                // noinspection JSValidateTypes
-                this._helperInstances.cameratarget = { // Añade la instancia
-                    update: this._helpersUpdate.length - 1,
-                    obj: mesh
-                }
-            }
-        } else { // Se elimina el helper si es que se instanció
-            if (notNullUndf(this._helperInstances.cameratarget)) {
-                this._helpersUpdate.splice(this._helperInstances.cameratarget.update, 1);
-                this._scene.remove(this._helperInstances.cameratarget.obj);
-            }
-            this._helperInstances.cameratarget = null;
-        }
-
-    };
-
     /**
      * Añade un mesh a la escena.
      *
      * @param {Object3D} mesh - Mesh
      * @param {string} name - Nombre del objeto
      * @param {boolean=} collaidable - Indica si el objeto es colisionable o no
-     * @since 0.1.0
      */
     this._addMeshToScene = function (mesh, name, collaidable) {
 
@@ -1824,7 +1164,6 @@ function ShaderViewer() {
      * Añade un mesh a la lista de objetos colisionables.
      *
      * @param {object} mesh - Mesh con características colisionables
-     * @since 0.1.0
      */
     this._addToCollidable = function (mesh) {
         this._collaidableMeshes.push(mesh);
@@ -1837,7 +1176,6 @@ function ShaderViewer() {
      * @param {number} y - Coordenada en y
      * @param {number} z - Coordenada en z
      * @return {Vector3}
-     * @since 0.1.0
      */
     this._newThreePoint = function (x, y, z) {
         return new THREE.Vector3(y, z, x);
@@ -1854,7 +1192,6 @@ function ShaderViewer() {
      * Inicia el visualizador.
      *
      * @param {string} parentElement - Contenedor del visualizador
-     * @since 0.1.3
      */
     this.init = function (parentElement) {
         self.id = parentElement;
@@ -1867,8 +1204,6 @@ function ShaderViewer() {
 
     /**
      * Ejecuta el shader seleccionado desde el menú.
-     *
-     * @since 0.1.6
      */
     this.loadSelectedShader = function () {
 
@@ -1905,7 +1240,6 @@ function ShaderViewer() {
      * Función que recibe los datos cargados de los shaders y ejecuta la función.
      *
      * @param {object} data - Datos descargados desde ajax
-     * @since 0.2.1
      */
     this._loadSelectedShaderHandler = function (data) {
 
@@ -1931,7 +1265,6 @@ function ShaderViewer() {
      * Define el selector del shader.
      *
      * @param {JQuery<HTMLElement>, HTMLElement} selector - Selector del shader
-     * @since 0.1.6
      */
     this.setShaderSelector = function (selector) {
         self._shaderSelector = selector;
@@ -1939,8 +1272,6 @@ function ShaderViewer() {
 
     /**
      * Inicia el objeto de dibujo del shader.
-     *
-     * @since 0.1.6
      */
     this._initShaderObject = function () {
 
@@ -2115,7 +1446,6 @@ function ShaderViewer() {
      * @param {number} z_i - Valor medio de Zi
      * @param {number} z_r - Valor medio de zr
      * @param {number} range - Rango del gráfico
-     * @since 0.1.6
      */
     this._setPlotBounds = function (z_r, z_i, range) {
 
@@ -2169,7 +1499,6 @@ function ShaderViewer() {
      * Dibuja la región del zoom.
      *
      * @param {object} e - Evento
-     * @since 0.2.1
      */
     this._drawZoomRegion = function (e) {
 
@@ -2257,8 +1586,6 @@ function ShaderViewer() {
 
     /**
      * Oculta el plano de zoom
-     *
-     * @since 0.4.1
      */
     this._hideZoomPlane = function () {
         if (self._bound.hide) return;
@@ -2272,8 +1599,6 @@ function ShaderViewer() {
 
     /**
      * Muestra el plano de zoom
-     *
-     * @since 0.4.1
      */
     this._showZoomPlane = function () {
         if (!self._bound.hide) return;
@@ -2289,7 +1614,6 @@ function ShaderViewer() {
      *
      * @param {number} zr - Coordenada real
      * @param {number} zi - Coordenada imaginaria
-     * @since 0.2.1
      */
     this._updateBoundZoom = function (zr, zi) {
 
@@ -2325,8 +1649,6 @@ function ShaderViewer() {
 
     /**
      * Hace un zoom (+), ajusta el recuadro y redibuja.
-     *
-     * @since 0.2.2
      */
     this._zoomIn = function () {
 
@@ -2355,8 +1677,6 @@ function ShaderViewer() {
 
     /**
      * Hace un zoom (-), ajusta el recuadro y redibuja.
-     *
-     * @since 0.2.2
      */
     this._zoomOut = function () {
 
@@ -2391,8 +1711,6 @@ function ShaderViewer() {
 
     /**
      * Escribe los datos del plano complejo en el menú.
-     *
-     * @since 0.2.2
      */
     this._printCoords = function () {
 
@@ -2419,7 +1737,6 @@ function ShaderViewer() {
      * Define la ventana de información del shader en el plano complejo.
      *
      * @param {JQuery<HTMLElement> | HTMLElement} window - Ventana de información
-     * @since 0.2.2
      */
     this.setComplexInfoWindow = function (window) {
 
@@ -2457,7 +1774,6 @@ function ShaderViewer() {
      *
      * @param {string} color - Nombre del color
      * @param {number} value - Valor del color
-     * @since 0.2.5
      */
     this.updateShaderColor = function (color, value) {
         this._shaderObject.color[color] = value;
@@ -2470,7 +1786,6 @@ function ShaderViewer() {
      *
      * @param {string} color - Nombre del color
      * @returns {number}
-     * @since 0.2.5
      */
     this.getShaderColor = function (color) {
         return this._shaderObject.color[color];
@@ -2545,7 +1860,6 @@ function ShaderViewer() {
      *
      * @param {JQuery<HTMLElement>} re - Input real
      * @param {JQuery<HTMLElement>} im - Input real
-     * @since 0.3.0
      */
     this.setJuliaInputs = function (re, im) {
         this._juliaInputs.re = re;
