@@ -1,0 +1,30 @@
+#include <stdexcept>
+
+Matrix<T>::Matrix(){
+	mat = new T[0]; # alloc in memory
+	n =0;
+	this->m=0;
+}	
+
+template<class T>
+Matrix<T>::Matrix(int n, int m){
+	if (n==0){
+		throw std::invalid_argument('matrix cannot be created');
+	}
+}
+
+
+
+
+test.h:
+
+#include <cassert>
+void test(){
+	bool exc = false;
+	try{
+		auto *m = new Matrix<int>(4,0);
+	}catch(std::exception &e){
+		exc = true;
+	}
+	assert(exc);
+}	
