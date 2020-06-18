@@ -43,6 +43,5 @@ cmake-build-debug/
 **.zip
 
 # Examples
-__code__**
 test/
 __otro__.*
