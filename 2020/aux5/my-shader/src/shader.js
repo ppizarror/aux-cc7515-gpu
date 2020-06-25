@@ -38,7 +38,6 @@ function Viewer() {
         container.appendChild(renderer.domElement);
 
         this.onWindowResize();
-
         window.addEventListener('resize', this.onWindowResize, false);
 
     };
@@ -50,7 +49,7 @@ function Viewer() {
     };
 
     /**
-     * FUncion que anima.
+     * Funcion que anima.
      *
      * @param {number=} timestamp
      */
