@@ -45,3 +45,20 @@ cmake-build-debug/
 # Examples
 test/
 __otro__.*
+
+# Latex
+**/**.vcxproj
+**/**.vcxproj.user
+**/**.tex
+**/**.aux
+**/**.log
+**/**.nav
+**/**.snm
+**/**.synctex.gz
+**/**.toc
+**/**.vrb
+**/Makefile
+**/**.png
+**/**.jpg
+**/**.txt
+**/**.xml
